@@ -5,7 +5,7 @@ import buscarEnLista from './utils'
 function Menu(){
   const [terminoBusqueda,setTerminoBusqueda]= useState('')
   const [listaFiltrada,setListaFiltrada]= useState([])
-  const [mostraarLista,setMostrarLista]= useState(false)
+  const [mostrarLista,setMostrarLista]= useState(false)
   const listaOriginal = ['vengadores','vendremos','venu','otra']
   const manejarCambio=(evento) =>{
     setTerminoBusqueda(evento.target.value);
@@ -20,7 +20,7 @@ function Menu(){
           </div>
           <div className="search-bar">
             <input type="search" placeholder='Buscar' value={terminoBusqueda} onChange={manejarCambio}/>
-            {mostraarLista && <ul className='nombresfiltrados'>{listaFiltrada.map((elemento)=>(<li key={(elemento.nombre)}>{elemento}</li>))}</ul>}
+            {mostrarLista && <ul className='nombresfiltrados'>{listaFiltrada.map((elemento)=>(<li key={(elemento.nombre)}>{elemento}</li>))}</ul>}
           </div>
           <ul className='menu'>
             <li><a href="#">Inicio</a></li>

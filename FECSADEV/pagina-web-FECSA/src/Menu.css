@@ -70,21 +70,3 @@ nav{
     display: block;
   }
 
-@media(max-width:320px){
-  
-}
-@media(min-width:321px) and (max-width:375px){
- 
-}
-@media(min-width:376px) and (max-width:414){
-
-}
-@media(min-width:415) and (max-width:1024){
-  
-}
-@media(min-width: 1025) and (max-width:1280){
-  
-}
-@media(min-width: 1441){
- 
-}
